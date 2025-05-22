@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keylogger Simülasyonu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Keylogger Simülasyonu</h1>
+    
+    <label for="keyInput">Yazı Alanı</label>
+    <textarea id="keyInput" placeholder="Buraya yazmaya başlayın..."></textarea>
+
+    <div class="buttons">
+      <button onclick="clearLog()">🧹 Temizle</button>
+      <button onclick="downloadLog()">📥 İndir</button>
+      <button onclick="simulateEmail()">📧 E-Posta Simülasyonu</button>
+    </div>
+
+    <div class="log-section">
+      <h3>📝 Gerçek Zamanlı Loglar</h3>
+      <ul id="logList"></ul>
+    </div>
+
+    <p class="disclaimer">⚠️ Bu bir eğitim simülasyonudur. Gerçek bir keylogger değildir.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
